@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <script language="JavaScript">
+
+    		var SetTime = 60*60+5;		// 최초 설정 시간(기본 : 초)
+
+    		function msg_time() {	// 1초씩 카운트
+
+    			m = Math.floor(SetTime / 60) + "분 " + (SetTime % 60) + "초";	// 남은 시간 계산
+
+    			var msg = "현재 남은 시간은 <font color='red'>" + m + "</font> 입니다.";
+
+    			document.all.ViewTimer.innerHTML = msg;		// div 영역에 보여줌
+
+    			SetTime--;					// 1초씩 감소
+
+    			if (SetTime < 0) {			// 시간이 종료 되었으면..
+            document.write("정답은 1-1, 2-2, 3-, 4-, 5-3, 6-1, 7-2, 8-, 9-3, 10-, 11-, 12- ");
+    				clearInterval(tid);		// 타이머 해제
+    				alert("종료");
+    			}
+
+    		}
+
+  		window.onload = function TimerStart(){ tid=setInterval('msg_time()',1000) };
+
+  	</script>
+  </head>
+  <body>
+    <h1> 반도체공학 모의 test</h1>
+
+    <div id="ViewTimer"></div>
+
+    <h1>1. Consider a GaAs pn junction diode at T=300 K. The
+parameters of the device are 𝑁𝑑 = 2 × 10^16cm^−3, 𝑁𝑎= 8 × 10^15cm^−3
+, 𝐷𝑛 = 210 cm^2/s, 𝐷𝑝 = 8 cm^2/s,𝜏𝑛 = 10^−7s, and 𝜏𝑝 = 5 × 10^−8s
+Determine the electric field in the neutral p region for the GaAs pn junction diode in the
+diode for a forward-bias voltage of 𝑉𝑎 = 1.05 V.
+We assume mobilities for GaAs are  𝜇𝑝 = 400 cm2/(V ∙ s).</h1>
+<h4>1.2.60V/cm 정답 </h4>
+<h4>2.3.60V/cm</h4>
+<h4>3.4.60V/cm</h4>
+<h4>4.5.60V/cm</h4>
+<h4>5.6.60V/cm</h4>
+
+<h1>2.(a) A silicon pn junction at T=400K has doping concentrations of Na=3*10^15cm^-3 and Nd=6*10^16cm^-3
+. A reverse-biased voltage of VR=6V  applied.
+Determine Vbi and W. (ni=1.5*10^10cm^-3, Nc=2.8*10^19cm^-3, Nv=1.04*10^19cm^-3, Eg=1.12eV
+) </h1>
+<h4>1. 0.597V, 1.73*10^-5m </h4>
+<h4>2. 0.597V, 1.73*10^-4m 정답</h4>
+<h4>3. 0.697V, 1.77*10^-6m </h4>
+<h4>4. 0.600V, 1.87*10^-4m</h4>
+<h4>5. 0.697V, 1.77*10^-6m</h4>
+
+<h1>3. </h1>
+<h4>1.</h4>
+<h4>2.</h4>
+<h4>3.</h4>
+<h4>4.</h4>
+<h4>5.</h4>
+
+<h1>4. </h1>
+<h4>1.</h4>
+<h4>2.</h4>
+<h4>3.</h4>
+<h4>4.</h4>
+<h4>5.</h4>
+
+<h1>5. The doping concentrations in a GaAs pn junction
+diode at T=300 K are 𝑁𝑑 = 5 × 10^16cm^−3 and 𝑁𝑎 =3 × 10^15cm^−3
+. The minority carrier concentration at
+either space charge edge is to be no larger than 20
+percent of the respective majority carrier concentration.
+Calculate the maximum forward-bias voltage that can
+be applied to this junction and still meet the required
+specifications. ni=1.8*10^6</h1>
+<h4>1.5.09V</h4>
+<h4>2.2.09V</h4>
+<h4>3.1.09V 정답</h4>
+<h4>4.0.09V</h4>
+<h4>5.6.69V</h4>
+
+<h1>6. The experimentally measured junction capacitance a one-sided silicon n+p junction biased at VR=6V and at T=400K is 𝐶=0.059pF. The built-in potential barrier is found to be Vbi=0.597V.
+  The cross sectional area is A=10^-5cm^2. Find the electron doping concentrations. ni=1.5*10^10cm^-3 </h1>
+<h4>1. 8.316*10^14 cm-3 정 </h4>
+<h4>2. 8.316*10^16 cm-3</h4>
+<h4>3. 8.516*10^14 cm-3</h4>
+<h4>4. 8.516*10^15 cm-3</h4>
+<h4>5. 8.316*10^14 cm-3</h4>
+
+<h1>7.  When an electric field E=200V/cm is applied, a drift current density J=80A/cm2 is required in n-type silicon. Determine the required impurity doping concentration by using above condition.
+ Assume that mobilities of electron and hole are given as μ_n=1350〖cm〗^2/V-s and μ_p=480〖cm〗^2/V-s.
+ </h1>
+<h4>1. 0.85×10^15 〖cm〗^(-3)</h4>
+<h4>2. 1.85×10^15 〖cm〗^(-3) 정답</h4>
+<h4>3. 2.5×10^15 〖cm〗^(-3)</h4>
+<h4>4. 1.85×10^10 〖cm〗^(-3)</h4>
+<h4>5. 8.15×10^15 〖cm〗^(-3)</h4>
+
+<h1>8. </h1>
+<h4>1.</h4>
+<h4>2.</h4>
+<h4>3.</h4>
+<h4>4.</h4>
+<h4>5.</h4>
+
+<h1>9.A bar of n-type silicon has a cross-sectional area A=10-4cm2 and a length L=0.8cm. An applied voltage is 8V and a current of 4mA is required.
+Assume that mobilities of electron and hole are given as μ_n=1350〖cm〗^2/V-s and μ_p=480〖cm〗^2/V-s.</h1>
+<h1>(a) required resistance?</h1>
+<h1>(b) required conductivity?</h1>
+<h1>(c) required impurity doping concentration?</h1>
+<h4>1. 2k(ohm), 0.25(ohm*cm)^-1, 1.85*10^15cm^-3 </h4>
+<h4>2. 1k(ohm), 0.15(ohm*cm)^-1, 2.85*10^16cm^-3</h4>
+<h4>3. 2k(ohm), 0.25(ohm*cm)^-1, 1.85*10^16cm^-3 정답</h4>
+<h4>4. 3k(ohm), 0.55(ohm*cm)^-1, 3.85*10^15cm^-3</h4>
+<h4>5. 1k(ohm), 0.15(ohm*cm)^-1, 1.85*10^15cm^-3</h4>
+
+<h1>10. </h1>
+<h4>1.</h4>
+<h4>2.</h4>
+<h4>3.</h4>
+<h4>4.</h4>
+<h4>5.</h4>
+
+<h1>11. </h1>
+<h4>1.</h4>
+<h4>2.</h4>
+<h4>3.</h4>
+<h4>4.</h4>
+<h4>5.</h4>
+
+<h1>12. </h1>
+<h4>1.</h4>
+<h4>2.</h4>
+<h4>3.</h4>
+<h4>4.</h4>
+<h4>5.</h4>
+
+  </body>
+</html>
